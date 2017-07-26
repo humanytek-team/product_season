@@ -23,6 +23,12 @@
 from openerp import fields, models
 
 
+class ProductTemplate(models.Model):
+    _inherit = "product.template"
+
+    season_id = fields.Many2one(related='product_variant_ids.season_id')
+
+
 class ProductProduct(models.Model):
     _inherit = "product.product"
 
