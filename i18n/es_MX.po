@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 9.0e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-26 16:49+0000\n"
-"PO-Revision-Date: 2017-07-26 12:51-0400\n"
+"POT-Creation-Date: 2017-07-28 12:40+0000\n"
+"PO-Revision-Date: 2017-07-28 08:44-0400\n"
 "Last-Translator: Manuel Marquez <buzondemam@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Plural-Forms: \n"
 "Language: es_MX\n"
 "X-Generator: Poedit 1.6.10\n"
+
+#. module: product_season
+#: model:ir.actions.act_window,help:product_season.action_season
+msgid "Click to define a new season."
+msgstr "Click para agregar una nueva temporada."
 
 #. module: product_season
 #: model:ir.model.fields,field_description:product_season.field_season_create_uid
@@ -71,8 +76,16 @@ msgstr "Plantilla de producto"
 #: model:ir.model.fields,field_description:product_season.field_product_product_season_id
 #: model:ir.model.fields,field_description:product_season.field_product_template_season_id
 #: model:ir.model.fields,field_description:product_season.field_season_name
+#: model:ir.ui.view,arch_db:product_season.season_form
 msgid "Season"
 msgstr "Temporada"
+
+#. module: product_season
+#: model:ir.actions.act_window,name:product_season.action_season
+#: model:ir.ui.menu,name:product_season.menu_season
+#: model:ir.ui.view,arch_db:product_season.season_tree
+msgid "Seasons"
+msgstr "Temporadas"
 
 #. module: product_season
 #: model:ir.model.fields,field_description:product_season.field_season_start_date
