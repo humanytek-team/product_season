@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="action_season" model="ir.actions.act_window">
+            <field name="name">Seasons</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">season</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to define a new season.
+              </p>
+            </field>
+        </record>
+
+        <record id="season_form" model="ir.ui.view">
+            <field name="name">season.form</field>
+            <field name="model">season</field>
+            <field name="arch" type="xml">
+                <form string="Season">
+                    <sheet>
+                        <div class="oe_title">
+                            <label string="Season" />
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+
+                        <group>
+                            <group>
+                                <field name="start_date"/>
+                            </group>
+                            <group>
+                                <field name="end_date"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="season_tree" model="ir.ui.view">
+            <field name="name">season.tree</field>
+            <field name="model">season</field>
+            <field name="arch" type="xml">
+                <tree string="Seasons">
+                    <field name="name" />
+                    <field name="start_date" />
+                    <field name="end_date" />
+                </tree>
+            </field>
+        </record>
+
+        <menuitem
+            id="menu_season"
+            name="Seasons"
+            parent="purchase.menu_procurement_management"
+            action="action_season"
+            sequence="15"/>
+
+    </data>
+</openerp>

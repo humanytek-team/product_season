@@ -33,10 +33,11 @@
     'author': "Humanytek",
     'website': "http://www.humanytek.com",
     'category': 'Sales',
-    'version': '1.0.0',
-    'depends': ['product', ],
+    'version': '1.1.0',
+    'depends': ['product', 'purchase'],
     'data': [
         'views/product_view.xml',
+        'views/season_view.xml',
     ],
     'demo': [
     ],
